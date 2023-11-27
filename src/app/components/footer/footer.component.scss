@@ -1,0 +1,112 @@
+.wrapp_footer {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    padding: 80px 80px 40px 80px;
+    box-shadow: 4px 4px 0px 2px #1E1E1E;
+
+    .block_navigation_footer {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Outfit', sans-serif;
+        border-bottom: solid 2px black;
+        padding-bottom: 40px;
+
+        .left_block {
+            width: 393px;
+
+            p {
+                margin-top: 16px;
+                line-height: 150%;
+            }
+            .block_social {
+                margin-top: 40px;
+
+                p {
+                    img {
+                        margin-right: 8px;
+                        background-color: #FFF5F0;
+                        padding: 8px;
+                        border: solid 2px black;
+                        border-radius: 4px;
+                    }
+                    .phone_padding {
+                        padding: 6px 8px;
+                    }
+                    .addres_padding {
+                        padding: 6px 10px;
+                    }
+                }
+            }
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-left: -40px;
+
+            ul {
+                list-style: none;
+                margin: -14px 0 0 40px;
+
+                li {
+                    font-weight: 500;
+                    margin-top: 14px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 400;
+                        transition: color .3s ease-in-out;
+                    }
+                    a:hover {
+                        color: #FF8D4D;
+                    }
+                }
+            }
+        }
+    }
+    .block_terms {
+        padding: 20px 0;
+        border-bottom: solid 2px black;
+        font-family: 'Outfit', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .block_polici {
+            display: flex;
+            margin-left: -10px;
+
+            .style_border {
+                border-left: solid 2px black;
+                border-right: solid 2px black;
+            }
+            p {
+                padding: 0 10px;
+                cursor: pointer;
+                font-weight: 500;
+            }
+        }
+        .block_social_media {
+
+            margin-left: -14px;
+            img {
+                border: solid 2px black;
+                border-radius: 6px;
+                background-color: #FFDECC;
+                padding: 14px;
+                margin-left: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+    .block_autor {
+        margin-top: 20px;
+        text-align: center;
+
+        p {
+            color: #656567;
+        }
+    }
+}

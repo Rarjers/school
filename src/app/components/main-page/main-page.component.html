@@ -1,1 +1,167 @@
 <app-header></app-header>
+<div class="container">
+    <div class="wrapp_info_block">
+        <div class="left_block_img">
+            <img src="assets/main/Image_main.png" alt="Image_main">
+        </div>
+        <div class="right_block_text">
+            <b>Welcome to Little Learners Academy</b>
+            <h1>Where Young Minds Blossom and <span>Dreams Take Flight.</span></h1>
+            <p>Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!</p>
+            <div class="block_our_info">
+                <div class="info_item">
+                    <h3>+7000</h3>
+                    <p>Students Passed Out</p>
+                </div>
+                <div class="info_item">
+                    <h3>+37</h3>
+                    <p>Awards & Recognitions</p>
+                </div>
+                <div class="info_item">
+                    <h3>+15</h3>
+                    <p>Experience Educators</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapp_benefits">
+        <div class="header_block_benefits">
+            <b>Children Deserve Bright Future</b>
+            <h2>Our Benefits</h2>
+            <p>With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</p>
+        </div>
+        <div class="benefits_wrapp_item" >
+            <div class="benefits_item" *ngFor = "let benefits of benefitsItem">
+                <img [src]="benefits.img" alt="">
+                <h3>{{benefits.name}}</h3>
+                <p>{{benefits.descriptino}}</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="wrapp_feedback">
+        <div class="header_block_benefits">
+            <b>Their Happy Words 🤗</b>
+            <h2>Our Testimonials</h2>
+            <p>Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.</p>
+        </div>
+        <div class="feedback_slider_wrapp">
+            <div class="prev_btn">
+                <button (click)="prevSlideClick()" id="prev_btn"><img src="assets/main/prev_arrow.svg" alt="next_arrow"></button>
+            </div>
+            <div class="feedback_slide" *ngFor = "let sliderItem of sliderItem">
+                <div class="block_face">
+                    <img [src]="sliderItem.faceImg" alt="slide_face">
+                </div>
+                <b>{{sliderItem.name}}</b>
+                <img [src]="sliderItem.starImg" alt="star">
+                <p>{{sliderItem.description}}</p>
+            </div>
+            <div class="next_btn">
+                <button (click)="nextSlideClick()" id="next_btn"><img src="assets/main/next_arrow.svg" alt="next_arrow"></button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapp_asked">
+        <div class="header_block_benefits">
+            <b>Solutions For The Doubts</b>
+            <h2>Frequently Asked Questions</h2>
+            <p>Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education.</p>
+        </div>
+        <div class="asked_items_wrapp">
+            <div class="asked_left_colum">
+                <div>
+                    <div class="asked_item" #askedItemsOne>
+                        <div class="visib_block" (click)="visibAskedOne()">
+                            <b>What are the school hours at Little Learners Academy?</b>
+                            <span>{{textPlusOne}}</span>
+                        </div>
+                        <div class="full_text" *ngIf="askedBlockOne">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="asked_item" #askedItemsThree>
+                        <div class="visib_block" (click)="visibAskedThree()">
+                            <b>Is there a uniform policy for students?</b>
+                            <span>{{textPlusThree}}</span>
+                        </div>
+                        <div class="full_text" *ngIf="askedBlockThree">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="asked_item" #askedItemsFive>
+                        <div class="visib_block" (click)="visibAskedFive()">
+                            <b>What extracurricular activities are available for students?</b>
+                            <span>{{textPlusFive}}</span>
+                        </div>
+                        <div class="full_text" *ngIf="askedBlockFive">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="asked_right_colum">
+                <div>
+                    <div class="asked_item" #askedItemsTwo>
+                        <div class="visib_block" (click)="visibAskedTwo()">
+                            <b>How do you handle food allergies and dietary restrictions?</b>
+                            <span>{{textPlusTwo}}</span>
+                        </div>
+                        <div class="full_text" *ngIf="askedBlockTwo">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="asked_item" #askedItemsFour>
+                        <div class="visib_block" (click)="visibAskedFour()">
+                            <b>What is the teacher-to-student ratio at Little Learners Academy?</b>
+                            <span>{{textPlusFour}}</span>
+                        </div>
+                        <div class="full_text" *ngIf="askedBlockFour">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapp_navigation">
+        <div class="header_block_benefits">
+            <b>Explore More</b>
+            <h2>Navigate through our Pages</h2>
+            <p>Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</p>
+        </div>
+        <div class="navigation_block">
+            <div class="navigation_item">
+                <h3>About Us</h3>
+                <img class="img_line" src="assets/main/navigation_line.svg" alt="navigation_line">
+                <p>Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child. Learn about our passionate educators and our engaging approach to early education.</p>
+                <a href="">Learn More <img src="assets/main/next_arrow.svg" alt=""></a>
+            </div>
+            <div class="navigation_item">
+                <h3>Academics</h3>
+                <img class="img_line" src="assets/main/navigation_line.svg" alt="navigation_line">
+                <p>Delve into our comprehensive academic programs designed to stimulate young minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that nurtures both intellectual and social development.</p>
+                <a href="">Learn More <img src="assets/main/next_arrow.svg" alt=""></a>
+            </div>
+            <div class="navigation_item">
+                <h3>Student Life</h3>
+                <img class="img_line" src="assets/main/navigation_line.svg" alt="navigation_line">
+                <p>Peek into the vibrant and enriching world of Student Life at Little Learners Academy. Discover the array of extracurricular activities, arts and crafts, sports, and social events that make our school experience truly memorable.</p>
+                <a href="">Learn More <img src="assets/main/next_arrow.svg" alt=""></a>
+            </div>
+            <div class="navigation_item">
+                <h3>Admissions</h3>
+                <img class="img_line" src="assets/main/navigation_line.svg" alt="navigation_line">
+                <p>Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
+                <a href="">Learn More <img src="assets/main/next_arrow.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

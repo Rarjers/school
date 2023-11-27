@@ -1,0 +1,268 @@
+.wrapp_info_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 60px auto 0 auto;
+
+    .left_block_img {
+        max-width: 615px;
+
+        img {
+            width: 100%;
+        }
+    }
+    .right_block_text {
+        margin-left: 50px;
+        font-family: 'Outfit', sans-serif;
+        max-width: 615px;
+        width: 100%;
+
+        b {
+            font-size: 18px;
+            border-bottom: solid 2px black;
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 130%;
+
+            span {
+                color: #FF8D4D;
+            }
+        }
+        p {
+            color: #333333;
+            margin: 20px 0 50px 0;
+        }
+        .block_our_info {
+            background-color: #FFEFE5;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            border: solid 2px black;
+            box-shadow: 6px 6px 0px 1px #FFBE99;
+
+            .info_item {
+                padding: 20px 40px;
+
+                h3 {
+                    font-size: 34px;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+.header_block_benefits { 
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    width: 880px;
+    margin: 0 auto;
+    
+    b {
+        font-weight: 500;
+        padding: 8px 14px;
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 6px;
+    }
+    h2 {
+        font-size: 48px;
+        margin: 14px 0;
+    }
+    p {
+        color: #333333;
+    }
+}
+.wrapp_benefits {
+    margin-top: 150px;
+    
+    .benefits_wrapp_item {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-rows: auto;
+        justify-content: center;
+        grid-column-gap: 40px;
+        grid-row-gap: 68px;
+        margin-top: 80px;
+
+        .benefits_item {
+            background-color: white;
+            border: solid 2px black;
+            border-radius: 10px;
+            box-shadow: 4px 4px 0px 2px #1E1E1E;
+            padding: 60px 40px 40px 40px;
+            position: relative;
+            font-family: 'Outfit', sans-serif;
+
+            img {
+                position: absolute;
+                top: -30px;
+                background-color: #FFDECC;
+                border-radius: 8px;
+                padding: 16px;
+                border: solid 2px black;
+            }
+            h3 {
+                font-size: 24px;
+            }
+            p {
+                line-height: 150%;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+.wrapp_feedback {
+    margin: 150px 0;
+
+    .feedback_slider_wrapp {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -40px;
+
+        .feedback_slide {
+            width: 250px;
+            border-radius: 10px;
+            border: solid 2px black;
+            box-shadow: 4px 4px 0px 2px #1E1E1E;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
+            margin-left: 40px;
+
+            .block_face {
+                width: 66px;
+                height: 66px;
+                border-radius: 100px;
+                background-color: #FFF5F0;
+                border: solid 1px black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            b {
+                margin: 10px 0 24px 0;
+                font-size: 20px;
+            }
+            p {
+                line-height: 150%;
+                font-weight: 500;
+                margin-top: 24px;
+            }
+        }
+        .next_btn {
+            margin-left: 40px;
+        }
+        .prev_btn, .next_btn {
+
+            button {
+                background-color: white;
+                border: solid 2px black;
+                border-radius: 8px;
+                padding: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.wrapp_asked {
+    margin-bottom: 150px;
+    
+    .asked_items_wrapp {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        
+        .asked_left_colum {
+            margin-right: 40px;
+            margin-bottom: -24px;
+        }
+        .asked_right_colum {
+            margin-bottom: -24px;
+        }
+        .asked_item {
+            background-color: #FFEFE5;
+            padding: 30px 30px 10px 30px;
+            border-radius: 10px;
+            border: solid 2px black;
+            font-family: 'Outfit', sans-serif;
+            width: 580px;
+            margin-bottom: 24px;
+
+
+            .visib_block {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 20px;
+
+                span {
+                    background-color: #FFF5F0;
+                    padding: 6px 12px;
+                    border: solid 2px black;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+            }
+            .full_text {
+                width: 504px;
+
+                p {
+                    border-top: solid 2px black;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+.wrapp_navigation {
+    margin: 150px 0;
+
+    .navigation_block {
+        display: grid;
+        grid-template-columns: repeat(2, 620px);
+        grid-template-rows: auto;
+        justify-content: center;
+        grid-gap: 40px;
+        margin-top: 80px;
+
+        .navigation_item {
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
+            background-color: white;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 0px 2px #1E1E1E;
+
+            h3 {
+                font-size: 34px;
+            }
+            .img_line {
+                margin: 24px 0 40px 0;
+            }
+            p {
+                margin-bottom: 78px;
+                line-height: 150%;
+                color: #4C4C4D;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                background-color: #FFDECC;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+                padding: 18px 186px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
